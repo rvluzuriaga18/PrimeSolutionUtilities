@@ -1,0 +1,10 @@
+*.cache
+*.dll
+*.exe
+*.pdb
+*.suo
+*.log
+bin/
+obj/
+/.vs/PrimeSolutionUtilities/v16/Server/sqlite3
+/packages
