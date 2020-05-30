@@ -8,3 +8,4 @@ bin/
 obj/
 /.vs/PrimeSolutionUtilities/v16/Server/sqlite3
 /packages
+/DapperUtilities/DapperUtilities.csproj.user
