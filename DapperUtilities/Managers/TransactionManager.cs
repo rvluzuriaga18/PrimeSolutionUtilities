@@ -44,6 +44,10 @@ namespace DapperUtilities.Managers
             {
                 return OperationResult<List<T>>.Failed(e.ToString());
             }
+            finally
+            {
+                parameters = new DynamicParameters();
+            }
         }
 
         /// <summary>
@@ -65,6 +69,10 @@ namespace DapperUtilities.Managers
             catch (Exception e)
             {
                 return OperationResult<T>.Failed(e.ToString());
+            }
+            finally
+            {
+                parameters = new DynamicParameters();
             }
         }
 
@@ -88,6 +96,10 @@ namespace DapperUtilities.Managers
             {
                 return OperationResult<int>.Failed(e.ToString());
             }
+            finally
+            {
+                parameters = new DynamicParameters();
+            }
         }
 
         /// <summary>
@@ -110,6 +122,10 @@ namespace DapperUtilities.Managers
             catch (Exception e)
             {
                 return OperationResult<object>.Failed(e.ToString());
+            }
+            finally
+            {
+                parameters = new DynamicParameters();
             }
         }
 
